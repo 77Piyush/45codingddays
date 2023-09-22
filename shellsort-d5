@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+void shellsort(int arr[],int n){
+int i,j,k,temp;
+for(i=n/2;i>0;i=i/2){
+for(j=i;j<n;j++){
+for(k=j-1;k>=0;k=k-1){
+if(a[k+1]>=a[k])
+	break;
+else{
+temp=a[k];
+a[k]=a[k+1];
+a[k+1]=temp;
+}
+
+}
+}
+
+}
+}
+void printarray(int arr[],int n){
+for(int i=0;i<n;i++){
+cout<<arr[i]<<" ";
+}cout<<endl;
+
+}
+int main(){
+int arr[7]={66,12,55,9,34,7,8};
+shellsort(arr,7);
+printarray(arr,7);
+return 0;
+}
